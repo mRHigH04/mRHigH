@@ -1,0 +1,121 @@
+body{
+    /* background-color: red; */
+}
+.navbar{
+    flex-direction: column;
+}
+.logo{
+    margin: 7px auto auto;
+}
+.logo img{
+    margin: auto;
+}
+ul{
+    display: flex;
+    /* flex-direction: column; */
+    margin: auto;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    height: 40vw;
+    width: 95vw;
+    margin: 9px auto 0px;
+}
+figure img {
+    height: 40vw;
+    width: 95vw;
+}
+#slider figure {
+    position: relative;
+    width: 380vw;
+    margin: 0;
+    left: 0;
+    animation-name: ani2;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+.boxitem{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.box1{
+    width: 44vw;
+    margin: 8px auto;
+}
+
+.box1 img{
+    width: 40vw;
+    height: 25vw;
+    margin-top: 10px;
+    border-radius: 14px;
+}
+h1{
+    text-align: center;
+    margin: 15px auto 2px;
+    font-size: 4vw;
+}
+.boxitem{
+    width: 95vw;
+}
+@keyframes ani2 {
+    0%{
+        left: 0;
+    }
+    27%{
+        left:0;
+    }
+    32%{
+        left: -95vw;
+    }
+    62%{
+        left:-95vw;
+    }
+    67%{
+        left: -190vw;
+    }
+    97%{
+        left: -190vw;
+    }
+    100%{
+        left: -285vw;
+    }
+}
+.left{
+    position: relative;
+    animation: l-ani 1s 1;
+}
+@keyframes l-ani {
+    0%{
+        left: -51vw;
+    }
+    100%{
+        left: 0;
+    }
+}
+.right{
+    position: relative;
+    animation: r-ani 1s 1;
+}
+@keyframes r-ani {
+    0%{
+        right: -51vw;
+    }
+    100%{
+        right: 0;
+    }
+}
+footer p{
+    position: relative;
+    animation: d-ani 1s 1;
+}
+@keyframes d-ani {
+    0%{
+        top: 60px;
+    }
+    100%{
+        top: 0;
+    }
+}

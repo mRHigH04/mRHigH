@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 267px ;
+    background-color: rgb(221, 239, 243);
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.logo{
+    display: inline-block;
+}
+.logo img{
+    width: 40px;
+    margin: 2px auto auto 22px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 45px;
+    margin-left: 25px;
+}
+ul li{
+    text-decoration: none;
+    list-style: none ;
+    padding: 0px 10px;
+    font-size: 1.1em;
+}
+ul li:hover{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.navbar{
+    display: flex;
+    /* height: 35px; */
+    background-color: black;
+    color: white;
+}
+@keyframes ani {
+    0%{
+        left: 0;
+    }
+    27%{
+        left:0;
+    }
+    32%{
+        left: -80vw;
+    }
+    62%{
+        left:-80vw;
+    }
+    67%{
+        left: -160vw;
+    }
+    97%{
+        left: -160vw;
+    }
+    100%{
+        left: -240vw;
+    }
+}
+
+main{
+    min-height: calc(100vh - 100px - 35px);
+}
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 320vw;
+    margin: 0;
+    left: 0;
+    animation-name: ani;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+figure img{
+    height: 30vw;
+    width: 80vw;
+    /* margin:0px 5vw; */
+    /* transform: translate(-80vw,0px);
+    animation: banner-slide ease-in 3s infinite; */
+    z-index: 1;
+}
+h1{
+    margin-left: 10vw;
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+h2{
+    margin-top: -14px;
+    font-size: 1em;
+}
+.boxitem{
+    display:flex;
+    width: 80vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin:0 auto 15px;
+}
+.box1{
+    margin: 20px auto;
+    height: auto;
+    width: auto;
+    background-color: rgb(180, 233, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 9px 7px 13px -2px grey;
+    
+}
+.box1:hover{
+    background-color: rgb(16, 113, 143);
+    color: white;
+    
+}
+.box1 img{
+    width: 17vw;
+    height: 11vw;
+    margin: 10px 5px;
+    border-radius: 5px;
+
+}
+.details{
+    margin: 18px auto 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details p{
+    margin-top: 10px ;
+}
+.banner{
+    height: 30vw;
+    width: 80vw;
+    background-color: white;
+    /* display: flex; */
+    /* overflow: hidden; */
+    margin: 30px auto 0px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    width: 1000vw;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
